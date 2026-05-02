@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Channels>
+
+    <Channel id="1" type="UDP">
+        <Name>MainUDP</Name>
+        <Enabled>true</Enabled>
+        <UDP>
+            <LocalIP>0.0.0.0</LocalIP>
+            <LocalPort>5000</LocalPort>
+            <RemoteIP>192.168.1.100</RemoteIP>
+            <RemotePort>6000</RemotePort>
+            <Broadcast>false</Broadcast>
+        </UDP>
+    </Channel>
+
+    <Channel id="2" type="Serial">
+        <Name>MainSerial</Name>
+        <Enabled>true</Enabled>
+        <Serial>
+            <Port>COM3</Port>
+            <BaudRate>9600</BaudRate>
+            <DataBits>8</DataBits>
+            <StopBits>1</StopBits>
+            <Parity>None</Parity>
+            <FlowControl>None</FlowControl>
+        </Serial>
+    </Channel>
+
+</Channels>
